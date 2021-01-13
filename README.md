@@ -3,3 +3,41 @@ Practice to build an API server and write an RESTful API for web &amp; APP servi
 
 Written with python FastAPI:
 Build local API server and simple RESTful API
+
+
+API 筆記:
+RESTful API: 一種API 設計標準
+
+使用 HTTP protocal (GET/POST/PUT/DELETE) 來實現 API 所需要的各種功能, 使設計時風格統一化
+
+ 
+HTTP method:
+GET: 取得資料
+POST: 新增資料, 若已存在則新增
+PUT: 更新資料, 若已存在則覆蓋
+DELETE: 刪除資料
+
+RESTful API 特徵:
+1.	善用 http verb
+2.	直觀的資源URL
+3.	操作資料類行為Web可接受: json, xml, yaml等
+
+同步與非同步:
+同步: 工作一做完後, 在開始進行工作二
+
+非同步: 工作一做到一半, 資源還有閒置時先開始進行工作二, 最後整體而言所有工作完成時間縮短, 達到省時間的目的, 有效利用閒置資源.
+
+API 測試站:
+Swagger UI: 可測試 API 的各個 requests 效果, 輸入不同的值
+
+Command line 呼叫 API:
+Curl: 在 OS 上用來和 HTTP protocol 下載上傳檔案的指令, 比wget只能下載通能更多. 可用 curl 發送 API request: curl –X GET “requests url”
+
+在 python 中對網頁伺服器提出 API 請求: 使用 requests 模組對 web server 呼叫要求
+如: GET 要求
+R = requests.get(‘http://localhost:8000/items/5?account=8’)
+Print(R.text)
+
+使用 api 發送請求, 目標 web server 須保持開啟可連線狀態.
+
+
