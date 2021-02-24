@@ -1,3 +1,5 @@
+
+# Flask 物件即為 WSGI APP
 from flask import Flask, render_template, request, url_for, redirect, send_from_directory, flash
 from werkzeug import secure_filename
 import os
