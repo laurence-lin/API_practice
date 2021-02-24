@@ -40,4 +40,32 @@ Print(R.text)
 
 使用 api 發送請求, 目標 web server 須保持開啟可連線狀態.
 
+Note 注意事項: The data transformed by API might involves security issue. There are multiple ways to hack and attach the data within API by others that aren't permitted.
+
+Python API framework: 
+
+Flask: 可建立網頁Server 和 API, 以micro概念為基礎設計的framework
+  A micro web application development tools: 'micro' means Flask is small basic but extensible. We could extend Flask with database integration, upload handling... and so on.
+  If may not include all aspects of function, but extensible by ourself when needed.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
 
