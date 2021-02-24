@@ -48,8 +48,24 @@ Flask: 可建立網頁Server 和 API, 以micro概念為基礎設計的framework
   A micro web application development tools: 'micro' means Flask is small basic but extensible. We could extend Flask with database integration, upload handling... and so on.
   If may not include all aspects of function, but extensible by ourself when needed.
   
+Run Flask APP:
+  After finished a .py file holds the APP: 
+     1. Tell terminal which APP to work with by exportking FLASK_APP environment variable: 
+          In CMD: export FLASK_APP = my_file.py
   
-  
+     2. Run with flask command: in CMD: flask run, or in Python: python -m flask run
+
+Externally visible server: Originally, the server built only run on the builder's computer, this is due to the debug mode.
+    Now if a user in same network on another computer want access to this server, setup the host IP by: flask run --host=0.0.0.0 <= tells the OS to listen on all IPs
+    
+Debug mode: 
+   Originally development mode, every change of our code we have to restart the code. Enabling debug support then the code changes might update itself to help debug.
+   Set development features: export FLASK_ENV environment variable to development:
+     export FLASK_ENV=development
+     flask run
+     
+
+                           
   
   
   
