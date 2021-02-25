@@ -81,6 +81,13 @@ Redirect to page when click box:
          if request.method == 'POST':
             return redirect(url_for(function_name_of_redirect_site))
          return render_template(file.html)   # render template might execute first, to display the webpage then run the above code
+         
+         
+Communiate with request with another request:
+    When we have input arguments that used in another site
+    Use session in flask:
+        First create secret key: app.secret_key = 'aojfio' <= this must be random binary, which woulc encrypt the message delivered by session
+        Then when we have variable to save in session: session[variable_name] = value <= we could call this value by session[variable_name]
      
 
                            
