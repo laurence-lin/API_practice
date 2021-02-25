@@ -64,6 +64,13 @@ Debug mode:
      export FLASK_ENV=development
      flask run
      
+Render the HTML file content:
+   1. Create template folder behind main code.py file named "templates":
+      app.py
+      templates
+         -file.html
+         
+   2. Then use render_templateset FLA
 
                            
   
