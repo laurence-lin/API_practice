@@ -70,7 +70,18 @@ Render the HTML file content:
       templates
          -file.html
          
-   2. Then use render_templateset FLA
+   2. Then use render_template
+
+
+
+
+Redirect to page when click box:
+     Use redirect & url_for in flask
+     When pressing button: (method = post)
+         if request.method == 'POST':
+            return redirect(url_for(function_name_of_redirect_site))
+         return render_template(file.html)   # render template might execute first, to display the webpage then run the above code
+     
 
                            
   
