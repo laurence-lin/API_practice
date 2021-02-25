@@ -89,7 +89,15 @@ Communiate with request with another request:
         First create secret key: app.secret_key = 'aojfio' <= this must be random binary, which woulc encrypt the message delivered by session
         Then when we have variable to save in session: session[variable_name] = value <= we could call this value by session[variable_name]
      
-
+Generate request to API connect to server:
+    When I have a route on server that returns some information desirable:
+    @app.route('/get_data')
+    def func():
+        data = get_data_from_disk()
+        return data
+    In windows: curl https://localhost/get_file   <= would return the file result
+    In linux: wget https://localhost/get_file
+                
                            
   
   
