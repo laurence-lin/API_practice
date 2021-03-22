@@ -98,6 +98,9 @@ Generate request to API connect to server:
     In windows: curl https://localhost/get_file   <= would return the file result
     In linux: wget https://localhost/get_file
                 
+                
+                
+              
                            
   
   
