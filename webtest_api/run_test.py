@@ -31,6 +31,10 @@ def background_run_test():
     # new test folder
     new_test_folder = os.path.join(new_folder, 'test_folder')
     os.mkdir(new_test_folder)
+    # new image folder
+    image_folder = os.path.join(new_test_folder, 'images')
+    os.mkdir(image_folder)
+    
     
     # Save web test arguments as json file
     # 1. first create a dictionary
