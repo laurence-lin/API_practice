@@ -9,7 +9,7 @@ import glob
 app = Flask('main')  # pass name of package, if only one module, __name__ is correct and fine, else define by ourself
 
 
-app.secret_key = b'flafhe9898jgajsr9jg9j8qt8jpgq98j4' # set secret key for session
+app.secret_key = b'SECRET_KEY' # set secret key for session
 
 project_path = 'D:/webtest_site_storage'
 
