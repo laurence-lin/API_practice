@@ -1,0 +1,24 @@
+
+Flask Web Server架設筆記與API應用
+
+
+
+
+
+
+API接收輸入參數:
+
+註: Flask會將?後面的值全部讀為request.args, 無法再route中輸入多重參數並輸入函數內。故用?格式直接默認輸入參數名再用get()讀取。
+
+以輸入input到model, 並回傳model prediction為例。另input為text, output為result
+@app.route(/predict)
+def func():
+    inputs = request.args.get("text")
+    output = model(inputs)
+    #須將output轉為json格式才能GET
+    output_json = json.dumps({"Prediction":output})
+    return output_json
+    
+呼叫API時:  http://localhost:port/predict?text="這是我輸入的文本資料哈哈哈"
+    
+
