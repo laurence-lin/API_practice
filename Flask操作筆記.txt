@@ -33,3 +33,33 @@ def function(x)
 @app.route('/url', methods=['GET', 'PORT']) <= 此API接收Get和Post兩種方法
 
 
+
+
+
+紀錄Server logging:
+Flask中使用標準python logging,使用Python內建logging函數即可
+
+Logging用途: Logging紀錄APP運行時發生的每時刻runtime behavior, 及各種event record。這幫助我們回頭檢視APP運行時發生的錯誤和運行狀況。
+
+Python logger包含4種模組: Logger, handler, filter, formatter依功能劃分。
+  Logger: 設定logging基本內容, 建立logging instance
+  Handler: 設定不同logging存取在不同位置
+  Filter: 過濾什麼logging event需要紀錄儲存
+  Formatter: 設定logging儲存時的樣子
+  
+  
+使用基本python logging紀錄APP歷程:
+  import logging
+  loggign.basicConfig(level=<logging的層級>, filename=<Loggingfile儲存位置/file.log>)
+  
+  
+  
+
+
+
+
+
+
+
+
+
