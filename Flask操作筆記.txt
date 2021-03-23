@@ -21,4 +21,15 @@ def func():
     
 呼叫API時:  http://localhost:port/predict?text="這是我輸入的文本資料哈哈哈"
     
+    
+Flask中另一種接受參數的方法: 再route中用<>輸入參數, 再用function讀取參數
+@app.route('/url/param1=<x>)
+def function(x)
+
+
+設定API可接受的HTTP方法: 預設只接受Get方法
+
+可在Route中設定HTTP methods:
+@app.route('/url', methods=['GET', 'PORT']) <= 此API接收Get和Post兩種方法
+
 
