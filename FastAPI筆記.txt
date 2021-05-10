@@ -7,7 +7,12 @@ FastAPI優點:
   1. 自動產生API測試UI介面
   2. 支援asyns, sync同步功能
   3. 偵測endpoint的data input validation, 避免不合規格的data input
+  4. 使用ASGI(asynchronous server gateway interface)溝通，速度較WSGE(web server gateway interface)還要快
 
+Uvicorn:
+  FastAPI用Uvicorn framework建立ASGE server.
+  執行方式： uvicorn main:app --reload # 執行main.py檔
+     
 
 
 
