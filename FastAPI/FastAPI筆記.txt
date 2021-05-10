@@ -12,6 +12,19 @@ FastAPI優點:
 Uvicorn:
   FastAPI用Uvicorn framework建立ASGE server.
   執行方式： uvicorn main:app --reload # 執行main.py檔
+  
+  
+Async & await:
+  Async: 允許非同步，一段程式執行中先讓資源去執行其他程式，回傳結果為Promise
+  
+  await: 等待，在await中的程式會等待他執行完成 
+   Async中使用await代表"執行完此段程式，再繼續執行非同步"
+  
+  Promise: 接到命令後的回傳物件，有三種類型: 
+    pending: 等待事件完成中
+    Resolved: 順利完成並回傳結果
+    Rejected: 任務失敗並告知原因
+  
      
 
 
