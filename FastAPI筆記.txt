@@ -1,0 +1,13 @@
+Python framework, 支援async 和sync的API呼叫管理
+
+
+FastAPI vs. Flask:
+
+FastAPI優點:
+  1. 自動產生API測試UI介面
+  2. 支援asyns, sync同步功能
+  3. 偵測endpoint的data input validation, 避免不合規格的data input
+
+
+
+
