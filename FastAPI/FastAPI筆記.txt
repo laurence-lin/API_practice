@@ -11,8 +11,10 @@ FastAPI優點:
 
 Uvicorn:
   FastAPI用Uvicorn framework建立ASGE server.
-  執行方式： uvicorn main:app --reload # 執行main.py檔
-  
+  執行方式： uvicorn main:app --reload 
+          # main: 執行main.py檔
+          # app: 在main.py中, 用app = FastAPI()建立的物件
+          # reload: 此server可即時更新
   
 Async & await:
   Async: 允許非同步，一段程式執行中先讓資源去執行其他程式，回傳結果為Promise
@@ -24,6 +26,23 @@ Async & await:
     pending: 等待事件完成中
     Resolved: 順利完成並回傳結果
     Rejected: 任務失敗並告知原因
+    
+Parameters for FastAPI:
+Path parameters: app.get('/item/{param}')
+
+Query parameters: app.get('/item/')
+  async def func(param1: int, param2: str)
+  不在path parameter中的即為query parameter.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
   
      
 
