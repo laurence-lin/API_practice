@@ -15,12 +15,14 @@ POST: request 有head和body, body可夾帶更多資訊, 置入檔案, 傳送成
 
 Request header: Enable client to send additional information about the request and the client itself.
  Additional message包刮: content type、authorization specification、Network connection等
+ 傳送訊息最大255character
  常見header field: 
     Connection:
     Content-type:
     Accept:
     
 Request body:Client send additional information to server, to allow server fetch the request content more correctly.
+ 傳送檔案可為XML, JSON等, 大小無上限
  
 
 
