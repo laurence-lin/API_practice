@@ -23,6 +23,12 @@ HTML有三種encoding方法:
   application/x-www-form-urlencoded （默認)
   multipart/form-data
   text/plain
+  
+建立form data request步驟:
+ 1. 建立parameter
+ 2. 建立value(上傳檔案)
+ 3. 建立body
+ 4. 建立request
 
 
 HTTP Method: request發送的不同方式
