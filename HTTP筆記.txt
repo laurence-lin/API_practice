@@ -18,11 +18,13 @@ Form data: Client和網頁element溝通時，使用text box、button、check box
   GET method中，API輸入query參數即為form data.
   POST method中，message body(request body)即為form data.
   
-Request body encoding: 使用POST方法時，request body有夾帶資訊則須對其做encoding
+Request body encoding: 使用POST方法時，若request body有夾帶資訊，則須對其做encoding, 此encoding規定資訊傳到Server後如何解析資料
+在POST request中，使用Content-type的request header來定義這裡的編碼方式
 HTML有三種encoding方法:
-  application/x-www-form-urlencoded （默認)
-  multipart/form-data
-  text/plain
+  application/x-www-form-urlencoded: 以form表單傳輸資料
+  application/json: 以json傳輸資料
+  multipart/form-data: 以binary傳輸資料, 如image, .mp3, file
+  text/plain: 以text傳輸資料, 用 "+" 換行
   
 建立form data request步驟:
  1. 建立parameter
