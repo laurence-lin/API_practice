@@ -1,13 +1,29 @@
 網頁呈現: Client send a request, server give a response。
 
+Request包含：
+ header: 封包標題
+ Method: GET, POST, PUT, ...
+ URL: request的 URL
+ body: 封包本體
+ 
+Response包含：
+ header: 封包標題
+ status: 回傳狀態
+ body: 封包本體
+
+
+
 Form data: Client和網頁element溝通時，使用text box、button、check box等HTML form形式傳輸的資訊稱為form data.
   Form data傳送的資訊為key-value pair. 在送出request時，server可直接從form field取得必要資訊.
   GET method中，API輸入query參數即為form data.
   POST method中，message body(request body)即為form data.
+  
+Request body encoding: 使用POST方法時，request body有夾帶資訊則須對其做encoding
+HTML有三種encoding方法:
+  application/x-www-form-urlencoded （默認)
+  multipart/form-data
+  text/plain
 
-
-Request包含head & body
-Response包含head & body
 
 HTTP Method: request發送的不同方式
 令request代表送信件, 則head為信封, body為信件內容
