@@ -13,4 +13,7 @@ GET: request 只有head包含資訊, 所有要送的資訊均在head內, 不允�
 POST: request 有head和body, body可夾帶更多資訊, 置入檔案, 傳送成本較高
 常用方法: 在URL寫在request head, 並在body內附上所有資訊
 
+Request head:
+
+
 
