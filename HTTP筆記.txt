@@ -1,0 +1,8 @@
+網頁呈現: Client send a request, server give a response。
+
+Request包含head & body
+Response包含head & body
+
+
+
+
