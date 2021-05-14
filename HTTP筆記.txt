@@ -14,6 +14,7 @@ Response包含：
 
 
 Form data: Client和網頁element溝通時，使用text box、button、check box等HTML form形式傳輸的資訊稱為form data.
+  在使用RESTful API時, 由Client藉由HTTP協定傳送給Server的data均統稱為form data.
   Form data傳送的資訊為key-value pair. 在送出request時，server可直接從form field取得必要資訊.
   GET method中，API輸入query參數即為form data.
   POST method中，message body(request body)即為form data.
