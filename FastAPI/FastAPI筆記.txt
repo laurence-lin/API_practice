@@ -34,7 +34,12 @@ Query parameters: app.get('/item/')
   async def func(param1: int, param2: str)
   不在path parameter中的即為query parameter.
   
-  
+上傳form data:
+ File vs. UploadFile: File可指定上傳檔案直接被存為bytes解析, 適用於小檔案. 檔案直接存至memory
+ UploadFile: 上傳檔案的上限無限大. 檔案先存到memory, 若memory不夠則自動存到disk. 支援async傳輸, metadata.
+ def uploadfile(file_x: bytes = File()):
+ 
+ def uploadfile(file_x: UploadFile = File())
   
   
   
