@@ -40,6 +40,9 @@ Query parameters: app.get('/item/')
  def uploadfile(file_x: bytes = File()):
  
  def uploadfile(file_x: UploadFile = File())
+ 
+ 
+Receive Uploaded file: python-multipart
   
   
   
